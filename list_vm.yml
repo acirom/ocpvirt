@@ -1,0 +1,6 @@
+- name: List VM Sample
+  hosts: all
+  tasks:
+    - name: Get a list of all VirtualMachines from any namespace
+      redhat.openshift_virtualization.kubevirt_vm_info:
+      register: vm_list
